@@ -1,0 +1,2 @@
+[console_scripts]
+ohip-mcp = ohip_mcp.server:main

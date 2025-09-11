@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: ohip-mcp-hotel-assistant
+    runtime: python3
+    plan: free
+    buildCommand: pip install -r requirements-render.txt
+    startCommand: ./start.sh
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: PYTHONPATH
+        value: /opt/render/project/src
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: HOSTNAME
+        sync: false
+      - key: CLIENT_ID
+        sync: false
+      - key: CLIENT_SECRET
+        sync: false
+      - key: ENTERPRISE_ID
+        value: PSALES
+      - key: APP_KEY
+        sync: false
+    healthCheckPath: /
