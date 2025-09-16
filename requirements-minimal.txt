@@ -1,0 +1,14 @@
+# Minimal requirements for Render deployment
+chainlit==1.0.504
+google-generativeai==0.7.2
+httpx==0.27.0
+pydantic==2.8.2
+pydantic-settings==2.4.0
+python-dotenv==1.0.1
+uvicorn==0.30.6
+fastapi==0.112.0
+
+# MCP - may need to be installed from source
+# mcp>=1.0.0
+# langgraph>=0.2.0
+

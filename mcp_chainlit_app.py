@@ -34,18 +34,31 @@ async def start():
         await cl.Message(
             content="""🤖 **Welcome to the MCP-Powered Hotel Assistant!**
 
-I'm an AI agent that uses **Gemini 2.5 Flash** to intelligently call **MCP (Model Context Protocol) tools** to help you with hotel operations.
+
 
 **🛠️ Available MCP Tools:**
-- 🔐 **test_oauth_token** - Test OAuth authentication
-- 🌐 **test_api_connection** - Test full API connectivity  
-- 🏨 **get_reservation** - Get detailed hotel reservation information
+-  **test_oauth_token** - Test OAuth authentication
+-  **test_api_connection** - Test full API connectivity  
+-  **get_reservation** - Get detailed hotel reservation information
+-  **accounts_receivables** - Access Accounts Receivables (ARS) data
+-  **activity_management** - Manage Activity (ACT) operations
+-  **availability_rates** - Check Availability (PAR) - Price, Availability, Rate
+-  **back_office** - Access Back Office (BOF) functions
+-  **room_blocks** - Manage Blocks (BLK) and room allocations
+-  **cashiering** - Handle Cashiering (CSH) operations
+-  **channel_config** - Manage Channel Configuration (CHL)
+-  **customer_management** - Access Customer Management Service (CMS)
+-  **front_desk_ops** - Front Desk Operations (FOF) management
+-  **housekeeping** - Housekeeping (HSK) operations
+-  **inventory** - Inventory (INV) management
+-  **profiles** - Manage Profiles (CRM) and guest data
+-  **reservations** - Full Reservations (RSV) management
+-  **rate_plans** - Rate Plan Management (RTP)
+-  **room_config** - Room Configuration (RM Config) settings
+-  **room_rotation** - Room Rotation (RMR) management
+-  **system_monitoring** - System Monitoring (SYS) and health checks
 
-**🤖 How I Work:**
-1. You tell me what you want to do in natural language
-2. I use Gemini 2.5 Flash to understand your request
-3. I intelligently decide which MCP tools to call
-4. I execute the tools and format the results for you
+
 
 **💬 Try asking:**
 - "Test the OAuth connection"
@@ -53,7 +66,7 @@ I'm an AI agent that uses **Gemini 2.5 Flash** to intelligently call **MCP (Mode
 - "Get reservation details for hotel SYDH3 and reservation 218290"
 - "Show me reservation information"
 
-**✨ I'm powered by true MCP architecture - the AI decides what tools to use!**
+
 
 How can I help you today?"""
         ).send()
