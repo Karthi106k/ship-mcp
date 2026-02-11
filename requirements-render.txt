@@ -1,15 +1,21 @@
 # Core dependencies for Render deployment
-mcp
-langgraph
-chainlit
-google-generativeai==0.7.2
+# Pinned versions to avoid pip resolution-too-deep errors
+
+# MCP and AI frameworks
+mcp==1.14.0
+langgraph==0.6.7
+chainlit==2.7.2
+google-generativeai==0.8.5
+literalai==0.1.201
 
 # HTTP and API dependencies
-httpx
-pydantic>=2.0.0,<3.0.0
-pydantic-settings>=2.0.0,<3.0.0
-python-dotenv
+httpx==0.28.1
+aiohttp==3.12.15
+multidict==6.6.4
+pydantic==2.11.7
+pydantic-settings==2.10.1
+python-dotenv==1.1.1
 
 # Web server dependencies
-uvicorn
-fastapi
+uvicorn==0.35.0
+fastapi==0.116.1
